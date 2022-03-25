@@ -1,0 +1,50 @@
+body {
+    align-items: center;
+    background-color: #262626;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    justify-content: center;
+}
+
+.coracao {
+    animation: batidao 1.4s linear infinite;
+    background-color: rgb(247, 72, 72);
+    height: 100px;
+    position: relative;
+    transform: rotate(45deg);
+    width: 100px;
+}
+
+.coracao::before {
+    background-color: rgb(247, 72, 72);
+    border-radius: 50%;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.coracao::after {
+    background-color: rgb(247, 72, 72);
+    border-radius: 50%;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+@keyframes batidao {
+    0% {transform: rotate(45deg) scale(1);}
+    25% {transform: rotate(45deg) scale(1);}
+    30% {transform: rotate(45deg) scale(1.4);}
+    50% {transform: rotate(45deg) scale(1.2);}
+    70% {transform: rotate(45deg) scale(1.4);}
+    100% {transform: rotate(deg) scale(1);}
+}
