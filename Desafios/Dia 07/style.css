@@ -1,6 +1,6 @@
 body {
     align-items: center;
-    background: #bd2ae2;
+    background: grey;
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -16,7 +16,7 @@ body {
 
 span {
     animation: chase 2s linear infinite;
-    background-color: white;
+    background-color: black;
     border-radius: 4px;
     height: 50px;
     position: absolute;
