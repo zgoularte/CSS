@@ -1,10 +1,10 @@
 body {
-    align-items: center;
-    background-color: rgba(10, 43, 48, 0.363);
-    font-family: 'Lato', sans-serif;
-    display: flex;
     height: 100vh;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(10, 43, 48, 0.363);
 }
 
 h1 {
@@ -17,7 +17,14 @@ h1 {
     -webkit-background-clip: text;
 }
 
-@keyframes text-backgorund {
-    from {background-position: 0 0;}
-    to {background-position: 100% 100%;}
+@keyframes text-background {
+
+    from {
+        background-position: 0 0
+    }
+
+    to {
+        background-position: 100% 100%
+    }
+
 }
