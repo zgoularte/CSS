@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Page Scroll Effects 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="bg">
+        <h2>Scroll to see Magic</h2>
+        <span class="SkewedOne"></span>
+        <span class="SkewedTwo"></span>
+    </section>
+    <section>
+        <h2>Also Watch Part 1 and 2... Link in Video Description</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, facere numquam? Excepturi laudantium veniam, asperiores magnam reiciendis minus repellat tenetur sapiente unde voluptas, quo odit iusto aperiam vitae autem debitis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, facere numquam? Excepturi laudantium veniam, asperiores magnam reiciendis minus repellat tenetur sapiente unde voluptas, quo odit iusto aperiam vitae autem debitis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, facere numquam? Excepturi laudantium veniam, asperiores magnam reiciendis minus repellat tenetur sapiente unde voluptas, quo odit iusto aperiam vitae autem debitis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, facere numquam? Excepturi laudantium veniam, asperiores magnam reiciendis minus repellat tenetur sapiente unde voluptas, quo odit iusto aperiam vitae autem debitis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, facere numquam? Excepturi laudantium veniam, asperiores magnam reiciendis minus repellat tenetur sapiente unde voluptas, quo odit iusto aperiam vitae autem debitis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, facere numquam? Excepturi laudantium veniam, asperiores magnam reiciendis minus repellat tenetur sapiente unde voluptas, quo odit iusto aperiam vitae autem debitis?<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, facere numquam? Excepturi laudantium veniam, asperiores magnam reiciendis minus repellat tenetur sapiente unde voluptas, quo odit iusto aperiam vitae autem debitis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, facere numquam? Excepturi laudantium veniam, asperiores magnam reiciendis minus repellat tenetur sapiente unde voluptas, quo odit iusto aperiam vitae autem debitis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, facere numquam? Excepturi laudantium veniam, asperiores magnam reiciendis minus repellat tenetur sapiente unde voluptas, quo odit iusto aperiam vitae autem debitis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, facere numquam? Excepturi laudantium veniam, asperiores magnam reiciendis minus repellat tenetur sapiente unde voluptas, quo odit iusto aperiam vitae autem debitis?</p>
+    </section>
+    <script>
+        const SkewedOne = document.querySelector('.SkewedOne');
+        const SkewedTwo = document.querySelector('.SkewedTwo');
+        window.addEventListener('scroll', function(){
+            const value1 = -15 + window.scrollY/45;
+            const value2 = 15 + window.scrollY/-45;
+            SkewedOne.style.transform = "skewY(" + value1 + "deg)"
+            SkewedTwo.style.transform = "skewY(" + value2 + "deg)"
+        })
+    </script>
+</body>
+</html>
