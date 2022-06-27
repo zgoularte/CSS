@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scroll To See Magic 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Scroll Down</h3>
+    <h2 class="text">Scroll To See Magic 4</h2>
+    <section>
+        <h2 class="innerText">Scroll To See Magic 4</h2>
+    </section>
+    <div class="container">
+        <h2>Also Watch Part 1, 2 & 3... Link in Video Description</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu ipsum consectetur, suscipit quam a, iaculis ante. Nunc quis ullamcorper nisl, hendrerit fringilla quam. Nulla vulputate luctus viverra. Fusce quis nibh ullamcorper, malesuada arcu a, consequat libero. Morbi rutrum odio tellus, quis fermentum libero auctor in. Vivamus tincidunt lacinia volutpat. Etiam faucibus maximus metus. Suspendisse at consectetur urna. Fusce tincidunt eleifend risus, et sagittis mauris viverra ut. Ut congue tempus ligula, condimentum blandit leo dapibus sed. In vestibulum in nisi vitae malesuada.<br>Proin pretium, urna at feugiat malesuada, urna nunc posuere urna, eget efficitur massa libero nec quam. Pellentesque imperdiet tempus diam, ut ornare dui dignissim eget. Nullam sit amet viverra mi, quis pretium massa. Mauris commodo nulla dui, sed ornare ante suscipit et. Nullam est lacus, scelerisque eget iaculis nec, laoreet non justo. In sit amet volutpat mi. Nulla urna magna, tempor et aliquam id, ullamcorper a lectus. Suspendisse egestas tellus a sapien dignissim bibendum. Cras sit amet urna ut lectus tincidunt euismod eget in nulla. Aliquam purus lorem, volutpat eu massa imperdiet, venenatis consequat nisl. Etiam volutpat nisl nec eros aliquet, vel pretium turpis tempus. Donec commodo eros ac tellus consequat molestie. Proin dapibus ex ut metus sagittis dignissim.<br><br>Proin hendrerit, enim nec tincidunt vestibulum, odio leo tristique ipsum, at viverra odio mi sit amet sapien. Integer eu est et massa egestas fermentum. Donec sed elementum nisl. Praesent rhoncus dolor vel iaculis accumsan. Donec imperdiet ac dolor eget vulputate. Duis sit amet nibh quis risus accumsan molestie. Vivamus purus sapien, molestie in aliquet a, iaculis pharetra dolor. Curabitur eget justo condimentum, facilisis orci quis, malesuada metus. Sed suscipit porta justo, sed egestas orci fermentum eget. Ut ac scelerisque tellus. Morbi bibendum massa augue, in gravida neque mattis sit amet. Duis ex leo, viverra in ornare non, laoreet et nibh. Ut at lacus et arcu feugiat scelerisque. Fusce accumsan tortor quis ex varius, quis dapibus mauris elementum.Aenean iaculis lacus vel posuere tempor. Aliquam erat volutpat. Fusce sit amet augue ligula. Integer nec nibh commodo, viverra orci sed, malesuada diam. Nullam imperdiet pharetra nisi in scelerisque. Sed in magna suscipit justo imperdiet consectetur vitae eu sem. Ut fermentum convallis egestas. Mauris mattis scelerisque elit. Donec mollis nulla quis nisl volutpat tincidunt. Mauris sollicitudin bibendum quam nec hendrerit. Donec augue leo, feugiat at sollicitudin et, finibus quis ex.<br><br>Curabitur tincidunt libero nisl, imperdiet efficitur est tristique in. Praesent massa arcu, dignissim at sollicitudin sit amet, dapibus congue lorem. Aliquam non nisl nec massa commodo pulvinar. Donec interdum elit eget est ornare, sed maximus lacus dictum. Nunc lobortis bibendum accumsan. Nam efficitur porttitor ex, eget mollis tortor tincidunt sed. Maecenas hendrerit nisl id leo aliquam, id tincidunt mi iaculis. Vivamus tempus est et nunc volutpat dignissim. Proin imperdiet cursus ante, et laoreet lectus maximus id. Praesent laoreet justo nec purus molestie, sed maximus purus facilisis. Aliquam sollicitudin congue facilisis. Duis eleifend nunc a laoreet accumsan. In hac habitasse platea dictumst. Duis fermentum felis at ipsum tristique, suscipit ullamcorper orci tincidunt. Nullam congue neque est, at consectetur quam porta nec.</p>
+    </div>
+
+    <script>
+        let section = document.querySelector('section');
+        let text = document.querySelector('.text');
+        let innerText = document.querySelector('.innerText')
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            section.style.clipPath = "circle("+ value +"px at center center)";
+            text.style.left = 100 - value / 5 + '%';
+            innerText.style.left = 100 - value / 5 + '%';
+        })
+    </script>
+</body>
+</html>
