@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creative Responsive Navigation Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menuToggle" onclick="ToggleMenu();"></div>
+    <div class="navigation">
+        <div class="navArea">
+            <ul>
+                <li>
+                    <a href="#" onmouseenter="changeImage('img1.jpg')">Home</a>
+                </li>
+                <li>
+                    <a href="#" onmouseenter="changeImage('img2.jpg')">About</a>
+                </li>
+                <li>
+                    <a href="#" onmouseenter="changeImage('img3.jpg')">Services</a>
+                </li>
+                <li>
+                    <a href="#" onmouseenter="changeImage('img4.jpg')">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#" onmouseenter="changeImage('img5.jpg')">Team</a>
+                </li>
+                <li>
+                    <a href="#" onmouseenter="changeImage('img6.jpg')">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="imgArea">
+            <img src="img1.jpg" id="slider">
+        </div>
+    </div>
+
+    <script>
+        function changeImage(anything){
+            document.getElementById('slider').src = anything;
+        }
+
+        function ToggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
