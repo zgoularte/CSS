@@ -32,3 +32,17 @@ section .text span {
     cursor: pointer;
     
 }
+
+section .text .span.active {
+    animation: smoke 2s linear infinite;
+}
+
+@keyframes smoke {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
