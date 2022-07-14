@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Sign in & Sign up Form | Vanilla Javascript</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <section>
-        <div class="container">
+        <di class="container">
             <div class="user signinBx">
                 <div class="imgBx"><img src="img1.jpg"></div>
                 <div class="formBx">
@@ -15,12 +17,37 @@
                         <h2>Sign In</h2>
                         <input type="text" placeholder="Username">
                         <input type="password" placeholder="Password">
-                        <input type="submit" value="login">
-                        <p class="signup">don't have an account? <a href="#">Sign Up</a></p>
+                        <input type="submit" value="Login">
+                        <p class="signup">don't have an account?<a href="#" onclick="toggle();">Sign up.</a></p>
                     </form>
                 </div>
             </div>
-        </div>
+
+            <div class="user signupBx">
+                <div class="formBx">
+                    <form>
+                        <h2>Create an account</h2>
+                        <input type="text" placeholder="Username">
+                        <input type="text" placeholder="Email Address">
+                        <input type="password" placeholder="Create Password">
+                        <input type="password" placeholder="Confirm Password">
+                        <input type="submit" value="Sign Up">
+                        <p class="signup">already have an account?<a href="#" onclick="toggle();">Sign in.</a></p>
+                    </form>
+                </div>
+                <div class="imgBx"><img src="img2.jpg"></div>
+            </div>
+            </div>
     </section>
+
+    <script>
+        function toggle() {
+            section = document.querySelector('section');
+            container = document.querySelector('.container');
+            container.classList.toggle('active');
+            section.classList.toggle('active');
+        }
+    </script>
 </body>
+
 </html>
