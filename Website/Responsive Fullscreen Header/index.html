@@ -12,6 +12,7 @@
     <header>
         <img src="bg.jpg" class="banner">
         <a href="#" class="logo">Brand.</a>
+        <div class="toggle"></div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -33,7 +34,13 @@
         window.addEventListener("scroll", function () {
             const header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 0);
-        })
+        });
+
+        const navigation = document.querySelector('nav');
+        document.querySelector('.toggle').onclick = function () {
+            this.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
     </script>
 </body>
 
