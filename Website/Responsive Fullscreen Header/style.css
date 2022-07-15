@@ -145,7 +145,7 @@ section p {
         top: 80px;
         left: 0;
         width: 100%;
-        height: calc(100% - 90px);
+        height: calc(100% - 80px);
         background: #000;
         display: flex;
         justify-content: center;
