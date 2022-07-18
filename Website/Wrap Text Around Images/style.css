@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    background: #111;
+}
+
+section h2 {
+    color: #fff;
+    font-size: 2.5em;
+}
+
+section p {
+    color: #fff;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.girl {
+    height: 500px;
+    float: left;
+    shape-outside: url(girl.png);
+    /* important: local or werb server is required to perform this action */
+    margin-right: 20px;
+    shape-margin: 20px;
+}
+
+.men {
+    width: 500px;
+    float: right;
+    shape-outside: url(men.png);
+    shape-margin: 20px;
+    margin-left: 20px;
+}
