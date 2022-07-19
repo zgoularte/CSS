@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -13,7 +13,7 @@ body {
     align-items: center;
     min-height: 100vh;
     transition: 0.5s;
-    background-color: #f53b57;
+    background: #f53b57;
 }
 
 .navigation {
@@ -123,44 +123,44 @@ body {
     transition: 0.5s;
 }
 
-.navigation ul li:nth-child(1).active ~ .indicator {
+.navigation  ul li:nth-child(1).active ~ .indicator {
     transform: translateX(calc(70px * 0));
 }
 
-.navigation ul li:nth-child(2).active ~ .indicator {
+.navigation  ul li:nth-child(2).active ~ .indicator {
     transform: translateX(calc(70px * 1));
 }
 
-.navigation ul li:nth-child(3).active ~ .indicator {
+.navigation  ul li:nth-child(3).active ~ .indicator {
     transform: translateX(calc(70px * 2));
 }
 
-.navigation ul li:nth-child(4).active ~ .indicator {
+.navigation  ul li:nth-child(4).active ~ .indicator {
     transform: translateX(calc(70px * 3));
 }
 
-.navigation ul li:nth-child(5).active ~ .indicator {
+.navigation  ul li:nth-child(5).active ~ .indicator {
     transform: translateX(calc(70px * 4));
 }
 
 
 
-.navigation ul li:nth-child(1).active ~ .indicator::before {
+.navigation  ul li:nth-child(1).active ~ .indicator::before {
     background: #f53b57;
 }
 
-.navigation ul li:nth-child(2).active ~ .indicator::before {
+.navigation  ul li:nth-child(2).active ~ .indicator::before {
     background: #3c40c6;
 }
 
-.navigation ul li:nth-child(3).active ~ .indicator::before {
+.navigation  ul li:nth-child(3).active ~ .indicator::before {
     background: #05c46b;
 }
 
-.navigation ul li:nth-child(4).active ~ .indicator::before {
-   background: #0fbcf9;
+.navigation  ul li:nth-child(4).active ~ .indicator::before {
+    background: #0fbcf9;
 }
 
-.navigation ul li:nth-child(5).active ~ .indicator::before {
-   background: #ffa801;
+.navigation  ul li:nth-child(5).active ~ .indicator::before {
+    background: #ffa801;
 }
