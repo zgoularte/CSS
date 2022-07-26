@@ -252,17 +252,18 @@ header ul li a.active {
     .sci li a {
         margin: 0 10px;
     }
+
+    .copyrightText {
+        position: relative;
+        bottom: initial;
+        left: inherit;
+        width: 100%;
+        color: #8a2435;
+        text-align: center;
+        margin-top: 20px;
+    }
 }
 
-.copyrightText {
-    position: relative;
-    bottom: initial;
-    left: inherit;
-    width: 100%;
-    color: #8a2435;
-    text-align: center;
-    margin-top: 20px;
-}
 
 @media (max-width: 600px) {
     .content h2 {
